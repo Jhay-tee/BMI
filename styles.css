@@ -1,0 +1,105 @@
+body {
+    background-color: #181a20;
+    color: #e0e6ed;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin-top: 5rem;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    color: #90caf9;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #222533;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 30, 80, 0.2);
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label {
+    color: #90caf9;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+input, select, textarea {
+    background-color: #1a2236;
+    color: #e0e6ed;
+    border: 1px solid #1976d2;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #42a5f5;
+    outline: none;
+}
+
+button, input[type="submit"] {
+    background-color: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #1565c0;
+}
+
+::placeholder {
+    color: #90caf9;
+    opacity: 0.7;
+}
+#results {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: none;
+    display: none;
+    white-space: pre-wrap; /* To preserve line breaks */
+}
+@media (max-width: 1024px) {
+    body{
+        margin-top: 10pc;
+    }
+    form {
+        max-width: 70vw;
+        width: 70vw;
+        height: 50vh;
+        margin: 40px auto;
+        padding: 32px 12px;
+        padding-left: 20px;
+        font-size: 2rem;
+        justify-items: center;
+    }
+    input, select, textarea, input[type="submit"] {
+        font-size: 1.25rem;
+        height: 20px;
+        width: 90%;
+        padding: 20px;
+    }
+    button{
+        font-size: 2rem;
+        width: 96%;
+        
+    }
+    #results{
+        font-size:40px
+    }
+}
