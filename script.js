@@ -2,7 +2,7 @@ const btn = document.getElementById("submit");
 const results = document.getElementById("results");
 
 function calc(weight, height) {
-    const value = Number(weight) / Number(height);
+    const value = Number(weight) / (Number(height)*Number(height));
     const roundedValue = value.toFixed(3);
     results.style.display = "block";
     results.innerText = `Your Body Mass Index is ${roundedValue}`;
